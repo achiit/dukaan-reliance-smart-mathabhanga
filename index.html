@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f2e9">
+  <meta name="description" content="Find everyday grocery essentials at Reliance Smart Point, Shib Bari Road, Mathabhanga, West Bengal. Call or WhatsApp for store enquiries.">
+  <title>Reliance Smart Point Mathabhanga | Grocery Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #f5f2e9;
+      --ink: #20251f;
+      --muted: #687066;
+      --green: #245b3b;
+      --green-dark: #173e2a;
+      --lime: #d7e7a6;
+      --orange: #e87935;
+      --line: #deded2;
+      --card: #fbfaf5;
+      --shadow: 0 18px 50px rgba(32,37,31,.09);
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; width: 100%; object-fit: cover; }
+    .wrap { width: min(1160px, calc(100% - 40px)); margin: auto; }
+    .topline { background: var(--green-dark); color: #f7f4e9; text-align: center; padding: 8px 14px; font-size: 12px; letter-spacing: .08em; }
+    header { position: sticky; top: 0; z-index: 20; background: rgba(245,242,233,.94); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+    .nav { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 22px; }
+    .brand { display: flex; align-items: center; gap: 11px; min-width: 210px; }
+    .brand-mark { width: 43px; height: 43px; display: grid; place-items: center; border-radius: 14px 14px 14px 4px; background: var(--green); color: var(--lime); font-weight: 800; font-size: 20px; }
+    .brand strong { display: block; font-size: 14px; line-height: 1.2; }
+    .brand small { display: block; color: var(--muted); font-size: 11px; margin-top: 3px; }
+    .navlinks { display: flex; gap: 25px; align-items: center; font-size: 13px; font-weight: 700; }
+    .navlinks a:hover { color: var(--green); }
+    .nav-actions { display: flex; align-items: center; gap: 9px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-radius: 999px; padding: 12px 18px; font-size: 13px; font-weight: 800; border: 1px solid transparent; transition: .2s ease; cursor: pointer; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-green { color: #fff; background: var(--green); }
+    .btn-outline { border-color: var(--line); background: transparent; }
+    .btn-orange { background: var(--orange); color: #211b15; }
+    .menu-btn { display: none; border: 1px solid var(--line); background: var(--card); border-radius: 12px; padding: 9px 12px; font-size: 20px; }
+    .hero { padding: 76px 0 58px; }
+    .hero-grid { display: grid; grid-template-columns: 1.02fr .98fr; gap: 52px; align-items: center; }
+    .eyebrow { display: inline-flex; gap: 8px; align-items: center; color: var(--green); font-size: 11px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--orange); }
+    h1,h2,h3,p { margin-top: 0; }
+    h1 { font-family: var(--serif); font-size: clamp(43px, 6vw, 76px); line-height: 1.02; letter-spacing: -.04em; margin: 18px 0; max-width: 650px; }
+    h1 em { color: var(--green); font-weight: 600; }
+    .hero-copy { max-width: 510px; color: var(--muted); font-size: 16px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 27px 0 19px; }
+    .micro { font-size: 12px; color: var(--muted); }
+    .hero-visual { position: relative; min-height: 480px; }
+    .hero-photo { position: absolute; inset: 0 35px 35px 0; border-radius: 190px 190px 18px 18px; overflow: hidden; box-shadow: var(--shadow); }
+    .hero-photo img { height: 100%; }
+    .hero-sticker { position: absolute; right: 0; bottom: 0; width: 178px; padding: 21px; border-radius: 18px; background: var(--lime); color: var(--green-dark); box-shadow: var(--shadow); transform: rotate(3deg); }
+    .hero-sticker b { display: block; font-family: var(--serif); font-size: 28px; line-height: 1.05; }
+    .hero-sticker span { font-size: 11px; font-weight: 700; }
+    .trust { padding: 24px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .trust-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; }
+    .trust-item { display: flex; align-items: center; gap: 12px; }
+    .trust-icon { width: 42px; height: 42px; flex: 0 0 42px; display: grid; place-items: center; border-radius: 50%; background: #e6eadb; color: var(--green); font-size: 19px; }
+    .trust-item b { display: block; font-size: 14px; }
+    .trust-item small { display: block; color: var(--muted); font-size: 11px; }
+    section { padding: 88px 0; }
+    .section-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 32px; }
+    .section-head h2 { font-family: var(--serif); font-size: clamp(34px, 4vw, 50px); line-height: 1.08; margin: 10px 0 0; letter-spacing: -.03em; }
+    .section-head p { max-width: 390px; color: var(--muted); margin: 0; font-size: 14px; }
+    .category-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
+    .category { min-height: 210px; padding: 23px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; display: flex; flex-direction: column; justify-content: space-between; transition: .2s; }
+    .category:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+    .category .emoji { font-size: 32px; }
+    .category h3 { font-family: var(--serif); font-size: 22px; margin: 15px 0 5px; }
+    .category p { color: var(--muted); font-size: 12px; margin: 0; }
+    .category a { color: var(--green); font-weight: 800; font-size: 12px; margin-top: 16px; }
+    .about { background: var(--green-dark); color: #f7f4e9; position: relative; overflow: hidden; }
+    .about:after { content: ""; position: absolute; width: 360px; height: 360px; border: 1px solid rgba(215,231,166,.2); border-radius: 50%; right: -90px; top: -100px; box-shadow: 0 0 0 35px rgba(215,231,166,.04),0 0 0 75px rgba(215,231,166,.03); }
+    .about-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 70px; align-items: center; position: relative; z-index: 1; }
+    .about-photo { height: 420px; border-radius: 16px 140px 16px 16px; overflow: hidden; }
+    .about-photo img { height: 100%; }
+    .about h2 { font-family: var(--serif); font-size: clamp(36px,4vw,54px); line-height: 1.08; margin: 12px 0 20px; }
+    .about p { color: #d0d8cc; font-size: 14px; }
+    .about-points { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 20px; margin-top: 25px; }
+    .about-points span { font-size: 13px; color: #edf0e5; }
+    .about-points span:before { content: "✓"; color: var(--lime); font-weight: 800; margin-right: 9px; }
+    .gallery-grid { display: grid; grid-template-columns: 1.15fr .85fr .85fr; grid-template-rows: 190px 190px; gap: 13px; }
+    .gallery-grid img { height: 100%; border-radius: 14px; }
+    .gallery-grid img:first-child { grid-row: span 2; }
+    .gallery-grid img:last-child { grid-column: span 2; }
+    .contact-card { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 30px; display: grid; grid-template-columns: .9fr 1.1fr; gap: 28px; }
+    .contact-card h3 { font-family: var(--serif); font-size: 30px; margin-bottom: 12px; }
+    .contact-details { display: grid; gap: 18px; margin: 24px 0; }
+    .detail { display: flex; gap: 13px; align-items: flex-start; }
+    .detail-icon { width: 36px; height: 36px; border-radius: 50%; background: #e6eadb; color: var(--green); display: grid; place-items: center; flex: 0 0 36px; }
+    .detail b { display: block; font-size: 13px; }
+    .detail span { display: block; color: var(--muted); font-size: 12px; }
+    .map { min-height: 350px; overflow: hidden; border-radius: 15px; background: #e5e4d8; }
+    .map iframe { width: 100%; height: 100%; min-height: 350px; border: 0; }
+    footer { background: #172b20; color: #f4f1e7; padding: 45px 0 24px; }
+    .footer-grid { display: flex; justify-content: space-between; gap: 30px; align-items: flex-start; }
+    footer p, footer a { color: #c1cbbf; font-size: 12px; }
+    footer .brand small { color: #c1cbbf; }
+    .footer-links { display: flex; gap: 18px; flex-wrap: wrap; }
+    .copyright { border-top: 1px solid rgba(255,255,255,.15); margin-top: 30px; padding-top: 17px; display: flex; justify-content: space-between; gap: 15px; color: #aeb9ae; font-size: 10px; }
+    .built { text-transform: lowercase; letter-spacing: .06em; }
+    .mobile-bar { display: none; }
+    @media (max-width: 900px) {
+      .navlinks { gap: 14px; }
+      .nav-actions .btn-outline { display: none; }
+      .hero-grid { gap: 28px; }
+      .category-grid { grid-template-columns: repeat(2,1fr); }
+      .about-grid { gap: 35px; }
+    }
+    @media (max-width: 680px) {
+      .wrap { width: min(100% - 30px, 560px); }
+      .topline { font-size: 10px; }
+      .nav { min-height: 68px; }
+      .brand { min-width: 0; }
+      .brand strong { font-size: 12px; }
+      .navlinks { display: none; position: absolute; left: 15px; right: 15px; top: 68px; padding: 18px; background: var(--card); border: 1px solid var(--line); border-radius: 15px; flex-direction: column; align-items: stretch; box-shadow: var(--shadow); }
+      .navlinks.open { display: flex; }
+      .nav-actions .btn { display: none; }
+      .menu-btn { display: block; }
+      .hero { padding: 48px 0 35px; }
+      .hero-grid { grid-template-columns: 1fr; }
+      h1 { font-size: clamp(43px, 13vw, 62px); }
+      .hero-copy { font-size: 14px; }
+      .hero-visual { min-height: 350px; margin-top: 8px; }
+      .hero-photo { inset: 0 25px 25px 0; border-radius: 130px 130px 15px 15px; }
+      .hero-sticker { width: 145px; padding: 16px; }
+      .hero-sticker b { font-size: 24px; }
+      .trust-grid { grid-template-columns: 1fr 1fr; gap: 18px 10px; }
+      .trust-item b { font-size: 12px; }
+      section { padding: 62px 0; }
+      .section-head { display: block; }
+      .section-head p { margin-top: 13px; }
+      .category-grid { gap: 10px; }
+      .category { min-height: 185px; padding: 17px; }
+      .category h3 { font-size: 19px; }
+      .about-grid { grid-template-columns: 1fr; gap: 30px; }
+      .about-photo { height: 290px; border-radius: 14px 100px 14px 14px; }
+      .about-points { gap: 12px; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 170px 130px 130px; }
+      .gallery-grid img:first-child { grid-row: auto; grid-column: span 2; }
+      .gallery-grid img:last-child { grid-column: auto; }
+      .contact-card { grid-template-columns: 1fr; padding: 21px; }
+      .map, .map iframe { min-height: 280px; }
+      .footer-grid { display: block; }
+      .footer-links { margin-top: 22px; }
+      .copyright { display: block; line-height: 2; }
+      .mobile-bar { display: grid; grid-template-columns: 1fr 1fr; position: fixed; z-index: 30; bottom: 0; left: 0; right: 0; padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); background: rgba(245,242,233,.97); border-top: 1px solid var(--line); gap: 9px; }
+      .mobile-bar .btn { padding: 13px 10px; }
+      body { padding-bottom: 76px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topline">EVERYDAY ESSENTIALS · MATHABHANGA, WEST BENGAL</div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="Reliance Smart Point Mathabhanga home">
+        <span class="brand-mark">S</span>
+        <span><strong>Reliance Smart Point</strong><small>Mathabhanga · Grocery Store</small></span>
+      </a>
+      <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#categories">Categories</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-outline" href="tel:+917501115398">Call Store</a>
+        <a class="btn btn-green" href="https://wa.me/917501115398?text=Hello%2C%20I%20have%20a%20query%20about%20Reliance%20Smart%20Point%20Mathabhanga." target="_blank" rel="noopener">WhatsApp ↗</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> Your neighbourhood grocery stop</div>
+          <h1>Everyday shopping, <em>made simpler.</em></h1>
+          <p class="hero-copy">Explore grocery and daily-use essentials at Reliance Smart Point on Shib Bari Road, Mathabhanga. Contact the store for product and availability enquiries.</p>
+          <div class="hero-actions">
+            <a class="btn btn-green" href="https://wa.me/917501115398?text=Hello%2C%20please%20help%20me%20with%20a%20product%20enquiry." target="_blank" rel="noopener">Message on WhatsApp ↗</a>
+            <a class="btn btn-outline" href="tel:+917501115398">Call 75011 15398</a>
+          </div>
+          <div class="micro">Located near Shani Mandir · Office Para, Mathabhanga</div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo"><img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=1000&auto=format&fit=crop" alt="Fresh produce displayed in a grocery store"></div>
+          <div class="hero-sticker"><b>Shop local.<br>Shop easy.</b><span>Everyday needs, close to home</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust">
+      <div class="wrap trust-grid">
+        <div class="trust-item"><span class="trust-icon">⌖</span><div><b>Mathabhanga</b><small>Shib Bari Road location</small></div></div>
+        <div class="trust-item"><span class="trust-icon">★</span><div><b>3.9 / 5 rating</b><small>175 reviews · listing information</small></div></div>
+        <div class="trust-item"><span class="trust-icon">◷</span><div><b>Opens at 9 AM</b><small>Hours may change; please confirm</small></div></div>
+        <div class="trust-item"><span class="trust-icon">☎</span><div><b>Quick enquiries</b><small>Call or WhatsApp the store</small></div></div>
+      </div>
+    </div>
+
+    <section id="categories">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow"><span class="dot"></span> Browse everyday needs</div><h2>Shopping essentials<br>in one place.</h2></div>
+          <p>Explore common supermarket categories. Product range, brands, stock and prices can vary by store and day; contact the store to confirm availability.</p>
+        </div>
+        <div class="category-grid">
+          <article class="category"><div><span class="emoji">🥬</span><h3>Fresh & Pantry</h3><p>Everyday food staples and kitchen essentials.</p></div><a href="https://wa.me/917501115398?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20fresh%20and%20pantry%20items." target="_blank" rel="noopener">Ask about products ↗</a></article>
+          <article class="category"><div><span class="emoji">🍪</span><h3>Snacks & Drinks</h3><p>Packaged snacks and beverage enquiries.</p></div><a href="https://wa.me/917501115398?text=Hello%2C%20please%20share%20availability%20of%20snacks%20and%20drinks." target="_blank" rel="noopener">Ask about products ↗</a></article>
+          <article class="category"><div><span class="emoji">🧴</span><h3>Home & Personal Care</h3><p>Daily-use cleaning and personal care essentials.</p></div><a href="https://wa.me/917501115398?text=Hello%2C%20I%20have%20an%20enquiry%20about%20home%20and%20personal%20care%20items." target="_blank" rel="noopener">Ask about products ↗</a></article>
+          <article class="category"><div><span class="emoji">🛒</span><h3>More Daily Needs</h3><p>Ask the store about other available categories.</p></div><a href="https://wa.me/917501115398?text=Hello%2C%20what%20other%20daily%20need%20products%20are%20available%3F" target="_blank" rel="noopener">Ask about products ↗</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <div class="about-photo"><img src="https://images.unsplash.com/photo-1604719312566-8912e9c8a213?w=900&auto=format&fit=crop" alt="Supermarket shelves stocked with grocery products" loading="lazy"></div>
+        <div>
+          <div class="eyebrow" style="color:#d7e7a6"><span class="dot"></span> A convenient local stop</div>
+          <h2>For the little things that keep life moving.</h2>
+          <p>Reliance Smart Point Mathabhanga is listed at Shib Bari Road, near Shani Mandir, Office Para, Mathabhanga, West Bengal 736146.</p>
+          <p>This independent information page helps visitors find the store and make a quick enquiry. For current offers, product prices, stock and store timings, please contact the store directly.</p>
+          <div class="about-points"><span>Easy-to-find location</span><span>Product enquiries by phone</span><span>WhatsApp contact option</span><span>Map and directions below</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow"><span class="dot"></span> A look around</div><h2>Everyday shopping,<br>at a glance.</h2></div>
+          <p>Illustrative grocery and supermarket photographs. These are not verified photographs of the Mathabhanga branch.</p>
+        </div>
+        <div class="gallery-grid">
+          <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=900&auto=format&fit=crop" alt="Fresh produce at a grocery market" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1604719312566-8912e9c8a213?w=700&auto=format&fit=crop" alt="Supermarket shelves" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1601599561213-832382fd07ba?w=700&auto=format&fit=crop" alt="Grocery shopping basket" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1543168256-418811576931?w=700&auto=format&fit=crop" alt="Packaged grocery products" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1543083477-4f785aeafaa9?w=700&auto=format&fit=crop" alt="Fresh fruits and vegetables" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow"><span class="dot"></span> Find the store</div><h2>Come by or<br>get in touch.</h2></div>
+          <p>Check the map for directions. Please call ahead to confirm current opening hours and product availability.</p>
+        </div>
+        <div class="contact-card">
+          <div>
+            <h3>Reliance Smart Point Mathabhanga</h3>
+            <p class="micro">Grocery store · Mathabhanga, West Bengal</p>
+            <div class="contact-details">
+              <div class="detail"><span class="detail-icon">⌖</span><div><b>Address</b><span>Shib Bari Rd, near Shani Mandir, Office Para, More, Mathabhanga, West Bengal 736146</span></div></div>
+              <div class="detail"><span class="detail-icon">☎</span><div><b>Phone & WhatsApp</b><span>+91 75011 15398</span></div></div>
+              <div class="detail"><span class="detail-icon">◷</span><div><b>Opening time</b><span>Listed as opening at 9:00 AM. Closing time not verified.</span></div></div>
+            </div>
+            <div class="hero-actions">
+              <a class="btn btn-green" href="tel:+917501115398">Call the store</a>
+              <a class="btn btn-orange" href="https://wa.me/917501115398?text=Hello%2C%20I%20am%20contacting%20you%20about%20Reliance%20Smart%20Point%20Mathabhanga." target="_blank" rel="noopener">WhatsApp ↗</a>
+            </div>
+            <a class="micro" href="https://www.google.com/maps/search/?api=1&query=Reliance+Smart+Point+Mathabhanga+Shib+Bari+Road+West+Bengal+736146" target="_blank" rel="noopener">Open directions in Google Maps ↗</a>
+          </div>
+          <div class="map">
+            <iframe title="Map showing Reliance Smart Point Mathabhanga area" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Reliance%20Smart%20Point%20Mathabhanga%2C%20Shib%20Bari%20Road%2C%20West%20Bengal%20736146&output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="#home"><span class="brand-mark">S</span><span><strong>Reliance Smart Point</strong><small>Mathabhanga · Grocery Store</small></span></a>
+          <p style="max-width:350px;margin-top:15px">An independent store information page to help visitors find the location and contact the store.</p>
+        </div>
+        <div class="footer-links"><a href="#home">Home</a><a href="#categories">Categories</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+      </div>
+      <div class="copyright"><span>© <span id="year"></span> Reliance Smart Point Mathabhanga information page.</span><span class="built">built with ❤️ by 21.coders</span></div>
+      <p style="font-size:10px;color:#9eaa9e;margin-top:12px">This is an independently created information page and is not an official Reliance Retail website. Store details and rating are based on the information supplied; please verify directly with the store.</p>
+    </div>
+  </footer>
+
+  <div class="mobile-bar">
+    <a class="btn btn-outline" href="tel:+917501115398">☎ Call</a>
+    <a class="btn btn-green" href="https://wa.me/917501115398?text=Hello%2C%20I%20have%20a%20query%20about%20Reliance%20Smart%20Point%20Mathabhanga." target="_blank" rel="noopener">WhatsApp ↗</a>
+  </div>
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navlinks = document.getElementById('navlinks');
+    menuBtn.addEventListener('click', () => {
+      const open = navlinks.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', String(open));
+      menuBtn.textContent = open ? '×' : '☰';
+    });
+    navlinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navlinks.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      menuBtn.textContent = '☰';
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
